@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{77871C17-AC04-461B-A835-AE31E5076D8D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Security.NET</RootNamespace>
+    <AssemblyName>Security.NET</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>..\packages\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="DataUtils.NET">
+      <HintPath>..\packages\DataUtils.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="Random.NET">
+      <HintPath>..\packages\Random.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\Encryption\AdvancedEntropyEncryptor.cs" />
+    <Compile Include="src\Encryption\PBKDF2\Abstract\PBKDF2PasswordHashing.cs" />
+    <Compile Include="src\Encryption\PBKDF2\Concrete\Blake2bPasswordHashing.cs" />
+    <Compile Include="src\Encryption\PBKDF2\Concrete\Blake2sPasswordHashing.cs" />
+    <Compile Include="src\Encryption\PBKDF2\Concrete\MD5PasswordHashing.cs" />
+    <Compile Include="src\Encryption\PBKDF2\Concrete\RIPEMD256PasswordHashing.cs" />
+    <Compile Include="src\Encryption\PBKDF2\Concrete\RIPEMD320PasswordHashing.cs" />
+    <Compile Include="src\Encryption\PBKDF2\Concrete\SHA1PasswordHashing.cs" />
+    <Compile Include="src\Encryption\PBKDF2\Concrete\SHA256PasswordHashing.cs" />
+    <Compile Include="src\Encryption\PBKDF2\Concrete\SHA3PasswordHashing.cs" />
+    <Compile Include="src\Encryption\PBKDF2\Concrete\SHA512PasswordHashing.cs" />
+    <Compile Include="src\Encryption\PBKDF2\Concrete\ShakePasswordHashing.cs" />
+    <Compile Include="src\Encryption\PBKDF2\Concrete\SM3PasswordHashing.cs" />
+    <Compile Include="src\Encryption\PBKDF2\Concrete\TigerPasswordHashing.cs" />
+    <Compile Include="src\Encryption\PBKDF2\Concrete\WhirlpoolPasswordHashing.cs" />
+    <Compile Include="src\Hash Generation\HashGenerationHelpers.cs" />
+    <Compile Include="src\Hash Generation\HashGenerator.cs" />
+    <Compile Include="src\Hash Generation\HMACHashGenerator.cs" />
+    <Compile Include="src\Encryption\IAdvancedEntropyEncryptor.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
