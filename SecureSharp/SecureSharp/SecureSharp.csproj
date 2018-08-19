@@ -56,6 +56,9 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="src\Encryption\Advanced Symmetric\AdvancedEntropyEncryptor.cs" />
+    <Compile Include="src\Encryption\Advanced Symmetric\Cross Platform\Abstract\CrossPlatformEncryptor.cs" />
+    <Compile Include="src\Encryption\Advanced Symmetric\Cross Platform\Concrete\SecureDataEncryptor.cs" />
+    <Compile Include="src\Encryption\Advanced Symmetric\Cross Platform\Concrete\SecureMemoryEncryptor.cs" />
     <Compile Include="src\Encryption\Advanced Symmetric\DotNet Data Protection API\Concrete\WindowsDataEncryptor.cs" />
     <Compile Include="src\Encryption\Advanced Symmetric\DotNet Data Protection API\Concrete\WindowsMemoryEncryptor.cs" />
     <Compile Include="src\Encryption\Advanced Symmetric\DotNet Symmetric\Concrete\AesEncryptor.cs" />

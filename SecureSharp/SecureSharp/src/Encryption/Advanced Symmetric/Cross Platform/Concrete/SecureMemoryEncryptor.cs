@@ -12,7 +12,12 @@ namespace SecureSharp.Encryption.AdvancedSymmetric.CrossPlatform
     public sealed class SecureMemoryEncryptor : CrossPlatformEncryptor<WindowsMemoryEncryptor, AesEncryptor>
     {
         /// <summary>
-        /// Initializes the <see cref="MemoryEncryptor"/> by assigning the encryptors to the <see cref="CrossPlatformEncryptor"/> 
+        /// Whether this <see cref="CrossPlatformEncryptor"/> implements shorter term encryption methods.
+        /// </summary>
+        protected override bool IsEphemeral => true;
+
+        /// <summary>
+        /// Initializes the <see cref="SecureMemoryEncryptor"/> by assigning the encryptors to the <see cref="CrossPlatformEncryptor"/> 
         /// with additional parameters which hold our current process info.
         /// </summary>
         /// <param name="encryptors"> The additional encryptors to use as our advanced entropy. </param>

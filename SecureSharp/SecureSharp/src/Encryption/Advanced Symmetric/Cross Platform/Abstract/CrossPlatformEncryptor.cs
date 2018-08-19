@@ -3,6 +3,7 @@ using RandomNET.Bytes;
 using RandomNET.Secure;
 using System;
 using System.Linq;
+using System.Runtime.CompilerServices;
 
 namespace SecureSharp.Encryption.AdvancedSymmetric.CrossPlatform
 {
@@ -12,10 +13,15 @@ namespace SecureSharp.Encryption.AdvancedSymmetric.CrossPlatform
     /// <typeparam name="TWinEncryptor"> The type of our Windows encryptor for this algorithm. </typeparam>
     /// <typeparam name="TOtherEncryptor"> The type of our non-Windows encryptor for this algorithm. </typeparam>
     public abstract class CrossPlatformEncryptor<TWinEncryptor, TOtherEncryptor> : AdvancedEntropyEncryptor
-        where TWinEncryptor : IAdvancedEntropyEncryptor
-        where TOtherEncryptor : IAdvancedEntropyEncryptor
+        where TWinEncryptor : AdvancedEntropyEncryptor
+        where TOtherEncryptor : AdvancedEntropyEncryptor
     {
         private readonly IAdvancedEntropyEncryptor encryptor;
+
+        /// <summary>
+        /// Whether this <see cref="CrossPlatformEncryptor"/> implements shorter term encryption methods.
+        /// </summary>
+        protected abstract bool IsEphemeral { get; }
 
         /// <summary>
         /// Initializes the <see cref="CrossPlatformEncryptor"/> by assigning the encryptors to the <see cref="IAdvancedEntropyEncryptor"/>.
@@ -24,7 +30,17 @@ namespace SecureSharp.Encryption.AdvancedSymmetric.CrossPlatform
         /// <param name="encryptors"> The additional encryptors to use as our advanced entropy. </param>
         protected CrossPlatformEncryptor(params object[] encryptors) : base(new object[0])
         {
-            encryptors = encryptors.Concat(new object[] { this, RandomBytes.Secure.SHA3.GetBytes(32).GetHexString() }).ToArray();
+            if (IsEphemeral)
+            {
+                encryptors = encryptors
+                    .Concat(new object[]
+                    {
+                        GetHashCode(),
+                        RuntimeHelpers.GetHashCode(this),
+                        RandomBytes.Secure.SHA3.GetBytes(32).GetHexString()
+                    })
+                    .ToArray();
+            }
 
             encryptor = Environment.OSVersion.Platform == PlatformID.Win32NT
                 ? (IAdvancedEntropyEncryptor)Activator.CreateInstance(typeof(TWinEncryptor), encryptors)
