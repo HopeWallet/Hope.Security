@@ -1,6 +1,8 @@
-﻿namespace SecureSharp.Encryption.AdvancedSymmetric
+﻿using System;
+
+namespace SecureSharp.Encryption.AdvancedSymmetric
 {
-    public interface IAdvancedEntropyEncryptor
+    public interface IAdvancedEntropyEncryptor : IDisposable
     {
         /// <summary>
         /// Encrypts <see langword="string"/> data with only the entropy from the object creation.

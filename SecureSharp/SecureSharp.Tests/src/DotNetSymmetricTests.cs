@@ -7,7 +7,7 @@ namespace SecureSharpTests
     public sealed class DotNetSymmetricTests
     {
         [TestMethod]
-        public void DESEncryptorTest()
+        public void AesEncryptorTest()
         {
             string encryptedData = string.Empty;
 
@@ -19,7 +19,7 @@ namespace SecureSharpTests
         }
 
         [TestMethod]
-        public void RC2EncryptorTest()
+        public void RijndaelEncryptorTest()
         {
             string encryptedData = string.Empty;
 
