@@ -59,6 +59,8 @@
     <Compile Include="src\Encryption\Advanced Symmetric\DotNet Data Protection API\Concrete\WindowsDataEncryptor.cs" />
     <Compile Include="src\Encryption\Advanced Symmetric\DotNet Data Protection API\Concrete\WindowsMemoryEncryptor.cs" />
     <Compile Include="src\Encryption\Advanced Symmetric\DotNet Symmetric\Concrete\AesEncryptor.cs" />
+    <Compile Include="src\Encryption\Advanced Symmetric\DotNet Symmetric\Concrete\DESEncryptor.cs" />
+    <Compile Include="src\Encryption\Advanced Symmetric\DotNet Symmetric\Concrete\RC2Encryptor.cs" />
     <Compile Include="src\Encryption\Advanced Symmetric\DotNet Symmetric\Concrete\RijndaelEncryptor.cs" />
     <Compile Include="src\Encryption\Advanced Symmetric\DotNet Data Protection API\Abstract\WindowsEncryptor.cs" />
     <Compile Include="src\Encryption\PBKDF2 Password Hashing\Abstract\PBKDF2PasswordHashing.cs" />

@@ -3,7 +3,7 @@
 namespace SecureSharp.Encryption.AdvancedSymmetric.DotNetSymmetric
 {
     /// <summary>
-    /// SymmetricEncryptor class used for encrypting data using the RijndaelManaged SymmetricAlgorithm.
+    /// SymmetricEncryptor class used for encrypting data using the <see cref="RijndaelManaged"/> <see cref="SymmetricAlgorithm"/>.
     /// </summary>
     public sealed class RijndaelEncryptor : SymmetricEncryptor<RijndaelEncryptor, RijndaelManaged>
     {

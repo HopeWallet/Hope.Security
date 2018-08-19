@@ -1,6 +1,7 @@
 ﻿using DataUtilsNET.Bytes;
 using DataUtilsNET.Strings;
 using RandomNET.Bytes;
+using SecureSharp.HashGeneration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -149,6 +150,7 @@ namespace SecureSharp.Encryption.AdvancedSymmetric
                 Array.Resize(ref hashBytes, currentLength + objBytesLength);
                 Array.Copy(objBytes, 0, hashBytes, currentLength, objBytesLength);
 
+                hashBytes = hashBytes.GetSHA256Hash();
                 hashBytes = RandomBytes.Secure.SHA3.GetBytes(hashBytes, 64);
             }
 
