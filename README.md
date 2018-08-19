@@ -1,2 +1,2 @@
 # EntropicEncryption.NET
-Cross platform library for encrypting data and memory using multiple layers of entropy.
+Cross platform security library which implements secure password hashing with PBKDF2, symmetric encryption, and various other security principals.
