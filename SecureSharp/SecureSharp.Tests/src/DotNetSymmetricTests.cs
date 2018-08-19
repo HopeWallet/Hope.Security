@@ -1,11 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SecureSharp.Encryption.AdvancedSymmetric.DotNetSymmetric;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SecureSharpTests
 {
@@ -17,11 +11,11 @@ namespace SecureSharpTests
         {
             string encryptedData = string.Empty;
 
-            using (var des = new DESEncryptor())
-                encryptedData = des.Encrypt("my data", "my entropy");
+            using (var aes = new AesEncryptor())
+                encryptedData = aes.Encrypt("my data", "my entropy");
 
-            using (var des = new DESEncryptor())
-                Assert.AreEqual("my data", des.Decrypt(encryptedData, "my entropy"));
+            using (var aes = new AesEncryptor())
+                Assert.AreEqual("my data", aes.Decrypt(encryptedData, "my entropy"));
         }
 
         [TestMethod]
@@ -29,14 +23,11 @@ namespace SecureSharpTests
         {
             string encryptedData = string.Empty;
 
-            using (var des = new RC2Encryptor())
-                encryptedData = des.Encrypt("my data", "my entropy");
+            using (var rijndael = new RijndaelEncryptor())
+                encryptedData = rijndael.Encrypt("my data", "my entropy");
 
-            using (var des = new RC2Encryptor())
-                Assert.AreEqual("my data", des.Decrypt(encryptedData, "my entropy"));
-            //RC2CryptoServiceProvider rc2 = new RC2CryptoServiceProvider();
-            //Assert.AreEqual(8, rc2.IV.Length);
-            //Assert.AreEqual(16, rc2.Key.Length);
+            using (var rijndael = new RijndaelEncryptor())
+                Assert.AreEqual("my data", rijndael.Decrypt(encryptedData, "my entropy"));
         }
     }
 }
