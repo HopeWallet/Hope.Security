@@ -80,9 +80,9 @@
     <Compile Include="src\Encryption\PBKDF2 Password Hashing\Concrete\WhirlpoolPasswordHashing.cs" />
     <Compile Include="src\Encryption\Advanced Symmetric\DotNet Symmetric\Abstract\SymmetricEncryptor.cs" />
     <Compile Include="src\Hash Generation\HashGenerationHelpers.cs" />
-    <Compile Include="src\Hash Generation\HashGenerator.cs" />
-    <Compile Include="src\Hash Generation\HMACHashGenerator.cs" />
     <Compile Include="src\Encryption\Advanced Symmetric\IAdvancedEntropyEncryptor.cs" />
+    <Compile Include="src\Hash Generation\HashGenerators.cs" />
+    <Compile Include="src\Hash Generation\HMACHashGenerators.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

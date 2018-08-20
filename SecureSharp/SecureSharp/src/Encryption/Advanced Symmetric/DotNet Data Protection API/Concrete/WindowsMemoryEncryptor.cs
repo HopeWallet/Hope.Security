@@ -1,6 +1,7 @@
 ﻿using DataUtilsNET.Bytes;
 using RandomNET.Bytes;
 using SecureSharp.Encryption.AdvancedSymmetric.DotNetSymmetric;
+using SecureSharp.HashGeneration;
 using System.Security.Cryptography;
 
 namespace SecureSharp.Encryption.AdvancedSymmetric.DotNetDPAPI
@@ -20,7 +21,7 @@ namespace SecureSharp.Encryption.AdvancedSymmetric.DotNetDPAPI
         public WindowsMemoryEncryptor(params object[] encryptors) : base(encryptors)
         {
             aes = new AesEncryptor(encryptors);
-            randomEntropy = RandomBytes.Secure.SHA3.GetBytes(32);
+            randomEntropy = RandomBytes.Secure.SHA3.GetBytes(32).Shake_128();
         }
 
         /// <summary>

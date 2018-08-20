@@ -150,8 +150,7 @@ namespace SecureSharp.Encryption.AdvancedSymmetric
                 Array.Resize(ref hashBytes, currentLength + objBytesLength);
                 Array.Copy(objBytes, 0, hashBytes, currentLength, objBytesLength);
 
-                hashBytes = hashBytes.GetSHA256Hash();
-                hashBytes = RandomBytes.Secure.SHA3.GetBytes(hashBytes, 64);
+                hashBytes = hashBytes.SHA3_256();
             }
 
             return hashBytes;
