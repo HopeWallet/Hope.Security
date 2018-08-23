@@ -55,6 +55,36 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\PBKDF2\Engines\Concrete\Blake2b\Blake2b_160_Engine.cs" />
+    <Compile Include="src\PBKDF2\Engines\Concrete\Blake2b\Blake2b_256_Engine.cs" />
+    <Compile Include="src\PBKDF2\Engines\Concrete\Blake2b\Blake2b_384_Engine.cs" />
+    <Compile Include="src\PBKDF2\Engines\Concrete\Blake2b\Blake2b_512_Engine.cs" />
+    <Compile Include="src\PBKDF2\Engines\Concrete\Blake2s\Blake2s_160_Engine.cs" />
+    <Compile Include="src\PBKDF2\Engines\Concrete\Blake2s\Blake2s_256_Engine.cs" />
+    <Compile Include="src\PBKDF2\Engines\Concrete\Blake2s\Blake2s_384_Engine.cs" />
+    <Compile Include="src\PBKDF2\Engines\Concrete\Blake2s\Blake2s_512_Engine.cs" />
+    <Compile Include="src\PBKDF2\Engines\Concrete\Keccak\Keccak_128_Engine.cs" />
+    <Compile Include="src\PBKDF2\Engines\Concrete\Keccak\Keccak_224_Engine.cs" />
+    <Compile Include="src\PBKDF2\Engines\Concrete\Keccak\Keccak_256_Engine.cs" />
+    <Compile Include="src\PBKDF2\Engines\Concrete\Keccak\Keccak_288_Engine.cs" />
+    <Compile Include="src\PBKDF2\Engines\Concrete\Keccak\Keccak_384_Engine.cs" />
+    <Compile Include="src\PBKDF2\Engines\Concrete\Keccak\Keccak_512_Engine.cs" />
+    <Compile Include="src\PBKDF2\Engines\Abstract\PBKDF2Engine.cs" />
+    <Compile Include="src\PBKDF2\PBKDF2PasswordHashing.cs" />
+    <Compile Include="src\PBKDF2\Engines\Concrete\SHA1\SHA1_Engine.cs" />
+    <Compile Include="src\PBKDF2\Engines\Concrete\SHA2\SHA2_224_Engine.cs" />
+    <Compile Include="src\PBKDF2\Engines\Concrete\SHA2\SHA2_256_Engine.cs" />
+    <Compile Include="src\PBKDF2\Engines\Concrete\SHA2\SHA2_384_Engine.cs" />
+    <Compile Include="src\PBKDF2\Engines\Concrete\SHA2\SHA2_512_Engine.cs" />
+    <Compile Include="src\PBKDF2\Engines\Concrete\SHA3\SHA3_224_Engine.cs" />
+    <Compile Include="src\PBKDF2\Engines\Concrete\SHA3\SHA3_256_Engine.cs" />
+    <Compile Include="src\PBKDF2\Engines\Concrete\SHA3\SHA3_384_Engine.cs" />
+    <Compile Include="src\PBKDF2\Engines\Concrete\SHA3\SHA3_512_Engine.cs" />
+    <Compile Include="src\PBKDF2\Engines\Concrete\Shake\Shake_128_Engine.cs" />
+    <Compile Include="src\PBKDF2\Engines\Concrete\Shake\Shake_256_Engine.cs" />
+    <Compile Include="src\PBKDF2\Engines\Concrete\Skein\Skein_1024_Engine.cs" />
+    <Compile Include="src\PBKDF2\Engines\Concrete\Skein\Skein_256_Engine.cs" />
+    <Compile Include="src\PBKDF2\Engines\Concrete\Skein\Skein_512_Engine.cs" />
     <Compile Include="src\Symmetric Encryption\AdvancedEntropyEncryptor.cs" />
     <Compile Include="src\Symmetric Encryption\Cross Platform\Abstract\CrossPlatformEncryptor.cs" />
     <Compile Include="src\Symmetric Encryption\Cross Platform\Concrete\SecureDataEncryptor.cs" />
