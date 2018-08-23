@@ -1,7 +1,7 @@
-﻿using Hope.Security.Encryption.AdvancedSymmetric.DotNetSymmetric;
+﻿using Hope.Security.SymmetricEncryption.DotNetSymmetric;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace SecureSharpTests
+namespace Hope.SecurityTests
 {
     [TestClass]
     public sealed class DotNetSymmetricTests

@@ -8,5 +8,4 @@ C:\Users\Matthew LeLiever\Documents\Visual Studio 2017\Projects\Github\Hope.Secu
 C:\Users\Matthew LeLiever\Documents\Visual Studio 2017\Projects\Github\Hope.Security\Hope.Security\Hope.Security\obj\Debug\Hope.Security.csproj.CopyComplete
 C:\Users\Matthew LeLiever\Documents\Visual Studio 2017\Projects\Github\Hope.Security\Hope.Security\Hope.Security\obj\Debug\Hope.Security.dll
 C:\Users\Matthew LeLiever\Documents\Visual Studio 2017\Projects\Github\Hope.Security\Hope.Security\Hope.Security\obj\Debug\Hope.Security.pdb
-C:\Users\Matthew LeLiever\Documents\Visual Studio 2017\Projects\Github\Hope.Security\Hope.Security\Hope.Security\bin\Debug\Hope.Security.dll.CodeAnalysisLog.xml
-C:\Users\Matthew LeLiever\Documents\Visual Studio 2017\Projects\Github\Hope.Security\Hope.Security\Hope.Security\bin\Debug\Hope.Security.dll.lastcodeanalysissucceeded
+C:\Users\Matthew LeLiever\Documents\Visual Studio 2017\Projects\Github\Hope.Security\Hope.Security\Hope.Security\obj\Debug\Hope.Security.csprojAssemblyReference.cache

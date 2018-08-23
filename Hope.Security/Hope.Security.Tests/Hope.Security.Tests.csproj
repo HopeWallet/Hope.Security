@@ -59,7 +59,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="src\CrossPlatformEncryptionTests.cs" />
     <Compile Include="src\DotNetSymmetricTests.cs" />
-    <Compile Include="src\PasswordHashingTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

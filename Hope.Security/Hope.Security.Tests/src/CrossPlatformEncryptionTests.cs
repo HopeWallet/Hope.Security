@@ -1,8 +1,8 @@
-﻿using Hope.Security.Encryption.AdvancedSymmetric.CrossPlatform;
+﻿using Hope.Security.SymmetricEncryption.CrossPlatform;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Security.Cryptography;
 
-namespace SecureSharpTests
+namespace Hope.SecurityTests
 {
     [TestClass]
     public sealed class CrossPlatformEncryptionTests
