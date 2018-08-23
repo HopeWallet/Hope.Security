@@ -18,6 +18,9 @@ namespace Hope.Security.HashGeneration
         /// <returns> The hashed <see cref="string"/> value. </returns>
         public static string GetHash(string input, IDigest digest)
         {
+            if (string.IsNullOrEmpty(input))
+                return string.Empty;
+
             return GetHash(input.GetUTF8Bytes(), digest).GetHexString();
         }
 
@@ -29,6 +32,9 @@ namespace Hope.Security.HashGeneration
         /// <returns> The hashed <see cref="byte[]"/> value. </returns>
         public static byte[] GetHash(byte[] input, IDigest digest)
         {
+            if (input == null || input.Length == 0)
+                return null;
+
             byte[] output = new byte[digest.GetDigestSize()];
             digest.BlockUpdate(input, 0, input.Length);
             digest.DoFinal(output, 0);

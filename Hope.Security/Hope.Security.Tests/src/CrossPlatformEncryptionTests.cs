@@ -33,5 +33,21 @@ namespace Hope.SecurityTests
             // Decrypt encrypted memory with different SecureMemoryEncryptor and exception gets thrown
             Assert.ThrowsException<CryptographicException>(() => memoryEncryptor2.Decrypt(encryptedMemory));
         }
+
+        [TestMethod]
+        public void MemoryTest2()
+        {
+            var memoryEncryptor = new SecureMemoryEncryptor();
+
+            byte[] data = new byte[] { 5, 18, 39, 99 };
+
+            byte[] encryptedData = memoryEncryptor.Encrypt(data);
+            byte[] decryptedData = memoryEncryptor.Decrypt(encryptedData);
+
+            Assert.AreEqual(5, decryptedData[0]);
+            Assert.AreEqual(18, decryptedData[1]);
+            Assert.AreEqual(39, decryptedData[2]);
+            Assert.AreEqual(99, decryptedData[3]);
+        }
     }
 }
