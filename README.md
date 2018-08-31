@@ -2,6 +2,13 @@
   <img src="Hope.Security/Hope_Background.png?raw=true" alt="Hope" align="center" width="785px" height="328px"/>
 </p>
 
+| Code Quality |
+| :----|
+| [![CodeFactor][0]][1] |
+
+[0]: https://www.codefactor.io/repository/github/hopewallet/hope.security/badge
+[1]: https://www.codefactor.io/repository/github/hopewallet/hope.security
+
 # Hope.Security
 
 Cross platform security library which implements secure PBKDF2 password hashing, symmetric encryption, and various other security principals.
