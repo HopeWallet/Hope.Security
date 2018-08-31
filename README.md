@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="Hope.Security/Hope_Background.png?raw=true" alt="Hope" align="center" width="785px" height="328px"/>
+</p>
+
 # Hope.Security
 
 Cross platform security library which implements secure PBKDF2 password hashing, symmetric encryption, and various other security principals.
@@ -147,6 +151,12 @@ See the [Hope.Security.Tests](https://github.com/HopeWallet/Hope.Security/tree/m
 Many different engines are included to allow for many different scenarios. Some engines are faster than others, while being less secure, and vice versa. Play around with the engines to see what suits your needs best. The default iteration count is 50000, which is generally considered very secure. 
 
 It is recommended that you use a minimum iteration count of 10000, salt size of 64, and hash size of 128. Once again, these values all affect the speed and security of the algorithm. If you can afford to use higher iteration counts and better algorithms (like Blake2 or SHA3) then it is highly recommended.
+
+## Contributing
+
+Contributions are always welcome! Whether it has to do with code refactoring, feature addition, or bugs - all are appreciated!
+
+Create an [issue](https://github.com/HopeWallet/Hope.Ethereum/issues) and create pull requests, and they will all be taken a look at!
 
 ## Final Words
 
