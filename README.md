@@ -156,7 +156,7 @@ It is recommended that you use a minimum iteration count of 10000, salt size of 
 
 Contributions are always welcome! Whether it has to do with code refactoring, feature addition, or bugs - all are appreciated!
 
-Create an [issue](https://github.com/HopeWallet/Hope.Ethereum/issues) and create pull requests, and they will all be taken a look at!
+Create an [issue](https://github.com/HopeWallet/Hope.Security/issues) and create pull requests, and they will all be taken a look at!
 
 ## Final Words
 
