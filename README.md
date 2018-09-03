@@ -92,7 +92,7 @@ byte[] encryptedData = memoryEncryptor.Encrypt(data);
 byte[] decryptedData = memoryEncryptor.Decrypt(encryptedData);
 ```
 
-Unlike the ```SecureDataEncryptor```, you can encrypt some data without any entropy at all. This is because the ```SecureDataEncryptor``` generates its own byte entropy each time it is initialized. This is why you always need to use the same ```SecureMemoryEncryptor``` instance to decrypt data you encrypted.
+Unlike the ```SecureDataEncryptor```, you can encrypt some data without any entropy at all. This is because the ```SecureMemoryEncryptor``` generates its own byte entropy each time it is initialized. This is why you always need to use the same ```SecureMemoryEncryptor``` instance to decrypt data you encrypted.
 
 See the [Hope.Security.Tests](https://github.com/HopeWallet/Hope.Security/tree/master/Hope.Security/Hope.Security.Tests) folder for more example uses of the ```SecureDataEncryptor``` and ```SecureMemoryEncryptor```.
 
