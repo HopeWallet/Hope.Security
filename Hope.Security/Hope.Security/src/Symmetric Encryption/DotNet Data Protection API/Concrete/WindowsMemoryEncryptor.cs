@@ -32,10 +32,7 @@ namespace Hope.Security.SymmetricEncryption.DotNetDPAPI
         /// <returns> The encrypted <see langword="byte"/>[] data. </returns>
         protected override byte[] InternalEncrypt(byte[] data, byte[] entropy)
         {
-            byte[] encryptedData = data;
-            if (data.Length % 16 != 0 || data.Length == 0)
-                encryptedData = aes.Encrypt(data, entropy?.Length > 0 ? entropy : randomEntropy);
-
+            byte[] encryptedData = aes.Encrypt(data, entropy?.Length > 0 ? entropy : randomEntropy);
             ProtectedMemory.Protect(encryptedData, MemoryProtectionScope.SameProcess);
 
             return encryptedData;
@@ -49,11 +46,7 @@ namespace Hope.Security.SymmetricEncryption.DotNetDPAPI
         /// <returns> The decrypted <see langword="byte"/>[] data. </returns>
         protected override byte[] InternalDecrypt(byte[] encryptedData, byte[] entropy)
         {
-            if (encryptedData.Length % 16 != 0 || encryptedData.Length == 0)
-                return null;
-
             ProtectedMemory.Unprotect(encryptedData, MemoryProtectionScope.SameProcess);
-
             return aes.Decrypt(encryptedData, entropy?.Length > 0 ? entropy : randomEntropy);
         }
     }
