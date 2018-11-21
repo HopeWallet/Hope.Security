@@ -1,5 +1,4 @@
-﻿using Hope.Security.SymmetricEncryption.DotNetDPAPI;
-using Hope.Security.SymmetricEncryption.DotNetSymmetric;
+﻿using Hope.Security.SymmetricEncryption.DotNetSymmetric;
 using System.Diagnostics;
 
 namespace Hope.Security.SymmetricEncryption.CrossPlatform
@@ -8,7 +7,7 @@ namespace Hope.Security.SymmetricEncryption.CrossPlatform
     /// Cross platform class for encrypting/decrypting certain data in memory to avoid potential tampering.
     /// <para> Data can only be decrypted by the same instance of MemoryEncryptor. </para>
     /// </summary>
-    public sealed class SecureMemoryEncryptor : CrossPlatformEncryptor<WindowsMemoryEncryptor, AesEncryptor>
+    public sealed class SecureMemoryEncryptor : CrossPlatformEncryptor<AesEncryptor>
     {
         /// <summary>
         /// Whether this <see cref="CrossPlatformEncryptor"/> implements shorter term encryption methods.

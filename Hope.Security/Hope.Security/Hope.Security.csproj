@@ -89,11 +89,8 @@
     <Compile Include="src\Symmetric Encryption\Cross Platform\Abstract\CrossPlatformEncryptor.cs" />
     <Compile Include="src\Symmetric Encryption\Cross Platform\Concrete\SecureDataEncryptor.cs" />
     <Compile Include="src\Symmetric Encryption\Cross Platform\Concrete\SecureMemoryEncryptor.cs" />
-    <Compile Include="src\Symmetric Encryption\DotNet Data Protection API\Concrete\WindowsDataEncryptor.cs" />
-    <Compile Include="src\Symmetric Encryption\DotNet Data Protection API\Concrete\WindowsMemoryEncryptor.cs" />
     <Compile Include="src\Symmetric Encryption\DotNet Symmetric\Concrete\AesEncryptor.cs" />
     <Compile Include="src\Symmetric Encryption\DotNet Symmetric\Concrete\RijndaelEncryptor.cs" />
-    <Compile Include="src\Symmetric Encryption\DotNet Data Protection API\Abstract\WindowsEncryptor.cs" />
     <Compile Include="src\Symmetric Encryption\DotNet Symmetric\Abstract\SymmetricEncryptor.cs" />
     <Compile Include="src\Hash Generation\HashGenerationHelpers.cs" />
     <Compile Include="src\Symmetric Encryption\IAdvancedEntropyEncryptor.cs" />

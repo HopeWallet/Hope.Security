@@ -12,8 +12,7 @@ namespace Hope.Security.SymmetricEncryption.CrossPlatform
     /// </summary>
     /// <typeparam name="TWinEncryptor"> The type of our Windows encryptor for this algorithm. </typeparam>
     /// <typeparam name="TOtherEncryptor"> The type of our non-Windows encryptor for this algorithm. </typeparam>
-    public abstract class CrossPlatformEncryptor<TWinEncryptor, TOtherEncryptor> : AdvancedEntropyEncryptor
-        where TWinEncryptor : AdvancedEntropyEncryptor
+    public abstract class CrossPlatformEncryptor<TOtherEncryptor> : AdvancedEntropyEncryptor
         where TOtherEncryptor : AdvancedEntropyEncryptor
     {
         private readonly IAdvancedEntropyEncryptor encryptor;
@@ -42,9 +41,7 @@ namespace Hope.Security.SymmetricEncryption.CrossPlatform
                     .ToArray();
             }
 
-            encryptor = Environment.OSVersion.Platform == PlatformID.Win32NT
-                ? (IAdvancedEntropyEncryptor)Activator.CreateInstance(typeof(TWinEncryptor), encryptors)
-                : (IAdvancedEntropyEncryptor)Activator.CreateInstance(typeof(TOtherEncryptor), encryptors);
+            encryptor = (IAdvancedEntropyEncryptor)Activator.CreateInstance(typeof(TOtherEncryptor), encryptors);
         }
 
         /// <summary>
