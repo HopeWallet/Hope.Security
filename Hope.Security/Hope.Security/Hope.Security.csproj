@@ -34,9 +34,6 @@
     <Reference Include="BouncyCastle.Crypto">
       <HintPath>..\packages\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
-    <Reference Include="DataUtils.NET">
-      <HintPath>..\packages\DataUtils.NET.dll</HintPath>
-    </Reference>
     <Reference Include="Hope.Random">
       <HintPath>..\packages\Hope.Random.dll</HintPath>
     </Reference>
@@ -55,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\ByteEnumerableExtensions.cs" />
     <Compile Include="src\PBKDF2\Engines\Concrete\Blake2b\Blake2b_160_Engine.cs" />
     <Compile Include="src\PBKDF2\Engines\Concrete\Blake2b\Blake2b_256_Engine.cs" />
     <Compile Include="src\PBKDF2\Engines\Concrete\Blake2b\Blake2b_384_Engine.cs" />
@@ -85,6 +83,7 @@
     <Compile Include="src\PBKDF2\Engines\Concrete\Skein\Skein_1024_Engine.cs" />
     <Compile Include="src\PBKDF2\Engines\Concrete\Skein\Skein_256_Engine.cs" />
     <Compile Include="src\PBKDF2\Engines\Concrete\Skein\Skein_512_Engine.cs" />
+    <Compile Include="src\StringExtensions.cs" />
     <Compile Include="src\Symmetric Encryption\AdvancedEntropyEncryptor.cs" />
     <Compile Include="src\Symmetric Encryption\Cross Platform\Abstract\CrossPlatformEncryptor.cs" />
     <Compile Include="src\Symmetric Encryption\Cross Platform\Concrete\SecureDataEncryptor.cs" />

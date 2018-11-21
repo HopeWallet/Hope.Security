@@ -1,6 +1,6 @@
-﻿using DataUtilsNET.Bytes;
-using Hope.Random;
+﻿using Hope.Random;
 using Hope.Random.Bytes;
+using Hope.Random.Strings;
 using System;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -100,7 +100,6 @@ namespace Hope.Security.SymmetricEncryption.CrossPlatform
                 throw new ArgumentNullException("Data to encrypt is null or has a length of 0!");
 
             byte[] encryptedData = encryptor.Encrypt(data, entropy);
-            data.ClearBytes();
 
             return encryptedData;
         }
@@ -117,7 +116,6 @@ namespace Hope.Security.SymmetricEncryption.CrossPlatform
                 throw new ArgumentNullException("Data to decrypt is null or has a length of 0!");
 
             byte[] decryptedData = encryptor.Decrypt(encryptedData, entropy);
-            encryptedData.ClearBytes();
 
             return decryptedData;
         }

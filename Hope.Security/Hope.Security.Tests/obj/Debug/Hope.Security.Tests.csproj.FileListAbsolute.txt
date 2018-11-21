@@ -18,3 +18,22 @@ C:\Users\Matthew LeLiever\Documents\Visual Studio 2017\Projects\Github\Hope.Secu
 C:\Users\Matthew LeLiever\Documents\Visual Studio 2017\Projects\Github\Hope.Security\Hope.Security\Hope.Security.Tests\obj\Debug\Hope.Security.Tests.csproj.CopyComplete
 C:\Users\Matthew LeLiever\Documents\Visual Studio 2017\Projects\Github\Hope.Security\Hope.Security\Hope.Security.Tests\obj\Debug\Hope.Security.Tests.dll
 C:\Users\Matthew LeLiever\Documents\Visual Studio 2017\Projects\Github\Hope.Security\Hope.Security\Hope.Security.Tests\obj\Debug\Hope.Security.Tests.pdb
+C:\Users\Matthew\Documents\Visual Studio 2017\Projects\Github\Hope.Security\Hope.Security\Hope.Security.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Matthew\Documents\Visual Studio 2017\Projects\Github\Hope.Security\Hope.Security\Hope.Security.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Matthew\Documents\Visual Studio 2017\Projects\Github\Hope.Security\Hope.Security\Hope.Security.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Matthew\Documents\Visual Studio 2017\Projects\Github\Hope.Security\Hope.Security\Hope.Security.Tests\bin\Debug\Hope.Security.Tests.dll
+C:\Users\Matthew\Documents\Visual Studio 2017\Projects\Github\Hope.Security\Hope.Security\Hope.Security.Tests\bin\Debug\Hope.Security.Tests.pdb
+C:\Users\Matthew\Documents\Visual Studio 2017\Projects\Github\Hope.Security\Hope.Security\Hope.Security.Tests\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Matthew\Documents\Visual Studio 2017\Projects\Github\Hope.Security\Hope.Security\Hope.Security.Tests\bin\Debug\Hope.Security.dll
+C:\Users\Matthew\Documents\Visual Studio 2017\Projects\Github\Hope.Security\Hope.Security\Hope.Security.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Matthew\Documents\Visual Studio 2017\Projects\Github\Hope.Security\Hope.Security\Hope.Security.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Matthew\Documents\Visual Studio 2017\Projects\Github\Hope.Security\Hope.Security\Hope.Security.Tests\bin\Debug\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Matthew\Documents\Visual Studio 2017\Projects\Github\Hope.Security\Hope.Security\Hope.Security.Tests\bin\Debug\Hope.Random.dll
+C:\Users\Matthew\Documents\Visual Studio 2017\Projects\Github\Hope.Security\Hope.Security\Hope.Security.Tests\bin\Debug\Hope.Security.pdb
+C:\Users\Matthew\Documents\Visual Studio 2017\Projects\Github\Hope.Security\Hope.Security\Hope.Security.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Matthew\Documents\Visual Studio 2017\Projects\Github\Hope.Security\Hope.Security\Hope.Security.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Matthew\Documents\Visual Studio 2017\Projects\Github\Hope.Security\Hope.Security\Hope.Security.Tests\obj\Debug\Hope.Security.Tests.csprojAssemblyReference.cache
+C:\Users\Matthew\Documents\Visual Studio 2017\Projects\Github\Hope.Security\Hope.Security\Hope.Security.Tests\obj\Debug\Hope.Security.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Matthew\Documents\Visual Studio 2017\Projects\Github\Hope.Security\Hope.Security\Hope.Security.Tests\obj\Debug\Hope.Security.Tests.csproj.CopyComplete
+C:\Users\Matthew\Documents\Visual Studio 2017\Projects\Github\Hope.Security\Hope.Security\Hope.Security.Tests\obj\Debug\Hope.Security.Tests.dll
+C:\Users\Matthew\Documents\Visual Studio 2017\Projects\Github\Hope.Security\Hope.Security\Hope.Security.Tests\obj\Debug\Hope.Security.Tests.pdb

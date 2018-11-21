@@ -1,6 +1,4 @@
-﻿using DataUtilsNET.Bytes;
-using DataUtilsNET.Strings;
-using Hope.Random;
+﻿using Hope.Random;
 using Hope.Security.PBKDF2.Engines.Abstract;
 using Hope.Security.PBKDF2.Engines.SHA3;
 using Org.BouncyCastle.Crypto;
@@ -248,9 +246,6 @@ namespace Hope.Security.PBKDF2
 
             for (int i = 0; i < correctHash.Length && i < hashToCheck.Length; i++)
                 diff |= (uint)(correctHash[i] ^ hashToCheck[i]);
-
-            hash.ClearBytes();
-            salt.ClearBytes();
 
             return diff == 0;
         }

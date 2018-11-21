@@ -1,7 +1,6 @@
-﻿using DataUtilsNET.Bytes;
-using DataUtilsNET.Strings;
-using Org.BouncyCastle.Crypto;
+﻿using Org.BouncyCastle.Crypto;
 using System.Security.Cryptography;
+using System.Text;
 
 namespace Hope.Security.HashGeneration
 {
@@ -20,8 +19,8 @@ namespace Hope.Security.HashGeneration
         {
             if (string.IsNullOrEmpty(input))
                 return string.Empty;
-
-            return GetHash(input.GetUTF8Bytes(), digest).GetHexString();
+            
+            return GetHash(Encoding.UTF8.GetBytes(input), digest).GetHexString();
         }
 
         /// <summary>

@@ -1,6 +1,4 @@
-﻿using DataUtilsNET.Bytes;
-using DataUtilsNET.Strings;
-using Hope.Security.HashGeneration;
+﻿using Hope.Security.HashGeneration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,7 +30,7 @@ namespace Hope.Security.SymmetricEncryption
         {
             if (!Disposed)
             {
-                encryptorData.ForEach(bytes => bytes?.ClearBytes());
+                encryptorData.ForEach(bytes => { for (int i = 0; i < bytes.Length; i++) bytes[i] = 0; });
                 Disposed = true;
             }
 
