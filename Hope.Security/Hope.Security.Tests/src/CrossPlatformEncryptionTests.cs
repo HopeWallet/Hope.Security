@@ -1,6 +1,7 @@
 ﻿using Hope.Security.SymmetricEncryption.CrossPlatform;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Security.Cryptography;
+using Hope.Security.SymmetricEncryption;
 
 namespace Hope.SecurityTests
 {
@@ -12,10 +13,10 @@ namespace Hope.SecurityTests
         {
             string encryptedText = string.Empty;
 
-            using (var dataEncryptor = new SecureDataEncryptor("entropy", 14235, true))
+            using (var dataEncryptor = new SecureDataEncryptor("entropy", 14235, true) { Format = AdvancedEntropyEncryptor.StringFormat.Hex })
                 encryptedText = dataEncryptor.Encrypt("this is my data");
 
-            using (var dataEncryptor = new SecureDataEncryptor("entropy", 14235, true))
+            using (var dataEncryptor = new SecureDataEncryptor("entropy", 14235, true) { Format = AdvancedEntropyEncryptor.StringFormat.Hex })
                 Assert.AreEqual("this is my data", dataEncryptor.Decrypt(encryptedText));
         }
 

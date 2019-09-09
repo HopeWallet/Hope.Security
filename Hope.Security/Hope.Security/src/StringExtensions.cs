@@ -29,6 +29,22 @@ public static class StringExtensions
     public static string LimitEnd(this string str, int maxLength, string endCharacters = "") => str.Length <= maxLength ? str : str.Substring(0, maxLength) + endCharacters;
 
     /// <summary>
+    /// Converts a hex string to a byte array.
+    /// </summary>
+    /// <param name="str"> The hexadecimal string to convert. </param>
+    /// <returns> The byte data of the string. </returns>
+    public static byte[] GetHexBytes(this string str)
+    {
+        int numberChars = str.Length;
+        byte[] bytes = new byte[numberChars / 2];
+
+        for (int i = 0; i < numberChars; i += 2)
+            bytes[i / 2] = Convert.ToByte(str.Substring(i, 2), 16);
+
+        return bytes;
+    }
+
+    /// <summary>
     /// Converts a Base64 string to a byte array.
     /// </summary>
     /// <param name="str"> The Base64 string to convert. </param>

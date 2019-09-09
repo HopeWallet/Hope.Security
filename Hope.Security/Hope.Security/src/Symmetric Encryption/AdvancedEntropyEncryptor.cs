@@ -7,12 +7,23 @@ namespace Hope.Security.SymmetricEncryption
 {
     public abstract class AdvancedEntropyEncryptor : IAdvancedEntropyEncryptor
     {
+        public enum StringFormat
+        {
+            Base64,
+            Hex
+        }
+
         private readonly List<byte[]> encryptorData = new List<byte[]>();
 
         /// <summary>
         /// Whether this <see cref="AdvancedEntropyEncryptor"/> has been disposed of yet.
         /// </summary>
         public bool Disposed { get; protected set; }
+
+        /// <summary>
+        /// The format of the string.
+        /// </summary>
+        public StringFormat Format { get; set; }
 
         /// <summary>
         /// Initializes the <see cref="AdvancedEntropyEncryptor"/> with the array of object data to use to formulate our entropy.
@@ -66,7 +77,10 @@ namespace Hope.Security.SymmetricEncryption
         /// <param name="data"> The <see langword="string"/> data to encrypt. </param>
         /// <param name="entropy"> The additional entropy to apply to the encryption. </param>
         /// <returns> The encrypted <see langword="byte"/>[] data. </returns>
-        public string Encrypt(string data, byte[] entropy) => Encrypt(data?.GetUTF8Bytes(), entropy).GetBase64String();
+        public string Encrypt(string data, byte[] entropy)
+        {
+            return Format == StringFormat.Hex ? Encrypt(data?.GetUTF8Bytes(), entropy).GetHexString() : Encrypt(data?.GetUTF8Bytes(), entropy).GetBase64String();
+        }
 
         /// <summary>
         /// Encrypts <see langword="byte"/>[] data with an additional entropy parameter.
@@ -104,7 +118,10 @@ namespace Hope.Security.SymmetricEncryption
         /// <param name="encryptedData"> The encrypted <see langword="string"/> data to decrypt. </param>
         /// <param name="entropy"> The additional entropy to use to decrypt the data. </param>
         /// <returns> The decrypted <see langword="string"/> data. </returns>
-        public string Decrypt(string encryptedData, byte[] entropy) => Decrypt(encryptedData?.GetBase64Bytes(), entropy).GetUTF8String();
+        public string Decrypt(string encryptedData, byte[] entropy)
+        {
+            return Decrypt(Format == StringFormat.Hex ? encryptedData?.GetHexBytes() : encryptedData?.GetBase64Bytes(), entropy).GetUTF8String();
+        }
 
         /// <summary>
         /// Decrypts <see langword="byte"/>[] data using the additional entropy parameter.

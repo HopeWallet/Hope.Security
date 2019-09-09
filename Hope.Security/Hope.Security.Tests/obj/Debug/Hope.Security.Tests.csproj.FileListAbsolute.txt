@@ -9,7 +9,6 @@ C:\Users\Matthew LeLiever\Documents\Visual Studio 2017\Projects\Github\Hope.Secu
 C:\Users\Matthew LeLiever\Documents\Visual Studio 2017\Projects\Github\Hope.Security\Hope.Security\Hope.Security.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
 C:\Users\Matthew LeLiever\Documents\Visual Studio 2017\Projects\Github\Hope.Security\Hope.Security\Hope.Security.Tests\bin\Debug\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Matthew LeLiever\Documents\Visual Studio 2017\Projects\Github\Hope.Security\Hope.Security\Hope.Security.Tests\bin\Debug\Hope.Random.dll
-C:\Users\Matthew LeLiever\Documents\Visual Studio 2017\Projects\Github\Hope.Security\Hope.Security\Hope.Security.Tests\bin\Debug\DataUtils.NET.dll
 C:\Users\Matthew LeLiever\Documents\Visual Studio 2017\Projects\Github\Hope.Security\Hope.Security\Hope.Security.Tests\bin\Debug\Hope.Security.pdb
 C:\Users\Matthew LeLiever\Documents\Visual Studio 2017\Projects\Github\Hope.Security\Hope.Security\Hope.Security.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
 C:\Users\Matthew LeLiever\Documents\Visual Studio 2017\Projects\Github\Hope.Security\Hope.Security\Hope.Security.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
