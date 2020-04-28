@@ -26,14 +26,14 @@ namespace Hope.Security.HashGeneration
         /// </summary>
         /// <param name="input"> The <see langword="string"/> to get the hash for. </param>
         /// <returns> The <see cref="System.Security.Cryptography.HMACRIPEMD160"/> hashed <see langword="string"/>. </returns>
-        public static string HMACRIPEMD160(this string input) => HashGenerationHelpers.GetHash<HMACRIPEMD160>(input);
+        //public static string HMACRIPEMD160(this string input) => HashGenerationHelpers.GetHash<HMACRIPEMD160>(input);
 
         /// <summary>
         /// Gets the <see cref="System.Security.Cryptography.HMACRIPEMD160"/> hash of a <see langword="byte"/>[] input.
         /// </summary>
         /// <param name="input"> The <see langword="byte"/>[] data to get the hash for. </param>
         /// <returns> The <see cref="System.Security.Cryptography.HMACRIPEMD160"/> hashed <see langword="byte"/>[] data. </returns>
-        public static byte[] HMACRIPEMD160(this byte[] input) => HashGenerationHelpers.GetHash<HMACRIPEMD160>(input);
+        //public static byte[] HMACRIPEMD160(this byte[] input) => HashGenerationHelpers.GetHash<HMACRIPEMD160>(input);
 
         /// <summary>
         /// Gets the <see cref="System.Security.Cryptography.HMACSHA1"/> hash of a <see langword="string"/> input.

@@ -1,0 +1,11 @@
+C:\Users\Matthew\Documents\Visual Studio 2017\Projects\Github\Hope.Security\Hope.Security\Hope.Security\obj\Debug\netcoreapp2.2\Hope.Security.csproj.CoreCompileInputs.cache
+C:\Users\Matthew\Documents\Visual Studio 2017\Projects\Github\Hope.Security\Hope.Security\Hope.Security\obj\Debug\netcoreapp2.2\PlatformCompat.Analyzers.settings
+C:\Users\Matthew\Documents\Visual Studio 2017\Projects\Github\Hope.Security\Hope.Security\Hope.Security\bin\Debug\netcoreapp2.2\Hope.Security.deps.json
+C:\Users\Matthew\Documents\Visual Studio 2017\Projects\Github\Hope.Security\Hope.Security\Hope.Security\bin\Debug\netcoreapp2.2\Hope.Security.dll
+C:\Users\Matthew\Documents\Visual Studio 2017\Projects\Github\Hope.Security\Hope.Security\Hope.Security\bin\Debug\netcoreapp2.2\Hope.Security.pdb
+C:\Users\Matthew\Documents\Visual Studio 2017\Projects\Github\Hope.Security\Hope.Security\Hope.Security\bin\Debug\netcoreapp2.2\BouncyCastle.Crypto.dll
+C:\Users\Matthew\Documents\Visual Studio 2017\Projects\Github\Hope.Security\Hope.Security\Hope.Security\bin\Debug\netcoreapp2.2\DataUtils.NET.dll
+C:\Users\Matthew\Documents\Visual Studio 2017\Projects\Github\Hope.Security\Hope.Security\Hope.Security\bin\Debug\netcoreapp2.2\Hope.Random.dll
+C:\Users\Matthew\Documents\Visual Studio 2017\Projects\Github\Hope.Security\Hope.Security\Hope.Security\obj\Debug\netcoreapp2.2\Hope.Security.csproj.CopyComplete
+C:\Users\Matthew\Documents\Visual Studio 2017\Projects\Github\Hope.Security\Hope.Security\Hope.Security\obj\Debug\netcoreapp2.2\Hope.Security.dll
+C:\Users\Matthew\Documents\Visual Studio 2017\Projects\Github\Hope.Security\Hope.Security\Hope.Security\obj\Debug\netcoreapp2.2\Hope.Security.pdb

@@ -1,0 +1,125 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.2",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "Hope.Security/1.0.0": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "Microsoft.DotNet.Analyzers.Compatibility": "0.2.12-alpha",
+          "System.Data.DataSetExtensions": "4.5.0",
+          "System.Security.Cryptography.ProtectedData": "4.7.0",
+          "BouncyCastle.Crypto": "1.8.2.0",
+          "DataUtils.NET": "1.0.0.0",
+          "Hope.Random": "1.0.0.0"
+        },
+        "runtime": {
+          "Hope.Security.dll": {}
+        }
+      },
+      "Microsoft.CSharp/4.7.0": {},
+      "Microsoft.DotNet.Analyzers.Compatibility/0.2.12-alpha": {},
+      "System.Data.DataSetExtensions/4.5.0": {
+        "runtime": {
+          "lib/netstandard2.0/System.Data.DataSetExtensions.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.6.26515.6"
+          }
+        }
+      },
+      "System.Security.Cryptography.ProtectedData/4.7.0": {
+        "runtime": {
+          "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {
+            "assemblyVersion": "4.0.5.0",
+            "fileVersion": "4.700.19.56404"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.5.0",
+            "fileVersion": "4.700.19.56404"
+          }
+        }
+      },
+      "BouncyCastle.Crypto/1.8.2.0": {
+        "runtime": {
+          "BouncyCastle.Crypto.dll": {
+            "assemblyVersion": "1.8.2.0",
+            "fileVersion": "1.8.18099.1"
+          }
+        }
+      },
+      "DataUtils.NET/1.0.0.0": {
+        "runtime": {
+          "DataUtils.NET.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Hope.Random/1.0.0.0": {
+        "runtime": {
+          "Hope.Random.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Hope.Security/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.CSharp/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "path": "microsoft.csharp/4.7.0",
+      "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
+    },
+    "Microsoft.DotNet.Analyzers.Compatibility/0.2.12-alpha": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uu3yAa6hQZJoJZfBwXSvh+bN03KO06sWNZXwodxz7J1wva1g1+O4TnWJxX4dmsP6tLDTZtKy8IHiPLOOZIwt9w==",
+      "path": "microsoft.dotnet.analyzers.compatibility/0.2.12-alpha",
+      "hashPath": "microsoft.dotnet.analyzers.compatibility.0.2.12-alpha.nupkg.sha512"
+    },
+    "System.Data.DataSetExtensions/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-221clPs1445HkTBZPL+K9sDBdJRB8UN8rgjO3ztB0CQ26z//fmJXtlsr6whGatscsKGBrhJl5bwJuKSA8mwFOw==",
+      "path": "system.data.datasetextensions/4.5.0",
+      "hashPath": "system.data.datasetextensions.4.5.0.nupkg.sha512"
+    },
+    "System.Security.Cryptography.ProtectedData/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ehYW0m9ptxpGWvE4zgqongBVWpSDU/JCFD4K7krxkQwSz/sFQjEXCUqpvencjy6DYDbn7Ig09R8GFffu8TtneQ==",
+      "path": "system.security.cryptography.protecteddata/4.7.0",
+      "hashPath": "system.security.cryptography.protecteddata.4.7.0.nupkg.sha512"
+    },
+    "BouncyCastle.Crypto/1.8.2.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DataUtils.NET/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Hope.Random/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -209,14 +209,14 @@ namespace Hope.Security.HashGeneration
         /// </summary>
         /// <param name="input"> The <see langword="string"/> to get the hash for. </param>
         /// <returns> The <see cref="RIPEMD160"/> hashed <see langword="string"/>. </returns>
-        public static string RIPEMD_160(this string input) => HashGenerationHelpers.GetHash<RIPEMD160>(input);
+        //public static string RIPEMD_160(this string input) => HashGenerationHelpers.GetHash<RIPEMD160>(input);
 
         /// <summary>
         /// Gets the <see cref="RIPEMD160"/> hash of a <see langword="byte"/>[] input.
         /// </summary>
         /// <param name="input"> The <see langword="byte"/>[] data to get the hash for. </param>
         /// <returns> The <see cref="RIPEMD160"/> hashed <see langword="byte"/>[] data. </returns>
-        public static byte[] RIPEMD_160(this byte[] input) => HashGenerationHelpers.GetHash<RIPEMD160>(input);
+        //public static byte[] RIPEMD_160(this byte[] input) => HashGenerationHelpers.GetHash<RIPEMD160>(input);
 
         /// <summary>
         /// Gets the RIPEMD 256 bit hash of a <see cref="string"/> input.

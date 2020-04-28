@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "4HRmi8K8I2cPgvSgCx/2B3tgx+RclWRvJhyxoJZdUZrMzS9HWYjibZS8GZbPF6O1rJcMTN3vFfs5sg6d0Cgy3g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Matthew\\Documents\\Visual Studio 2017\\Projects\\Github\\Hope.Security\\Hope.Security\\Hope.Security\\Hope.Security.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Matthew\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Matthew\\.nuget\\packages\\microsoft.dotnet.analyzers.compatibility\\0.2.12-alpha\\microsoft.dotnet.analyzers.compatibility.0.2.12-alpha.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.app\\2.2.0\\microsoft.netcore.app.2.2.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.dotnetapphost\\2.2.0\\microsoft.netcore.dotnetapphost.2.2.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.dotnethostpolicy\\2.2.0\\microsoft.netcore.dotnethostpolicy.2.2.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.dotnethostresolver\\2.2.0\\microsoft.netcore.dotnethostresolver.2.2.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\2.2.0\\microsoft.netcore.platforms.2.2.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.targets\\2.0.0\\microsoft.netcore.targets.2.0.0.nupkg.sha512",
+    "C:\\Users\\Matthew\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Matthew\\.nuget\\packages\\system.data.datasetextensions\\4.5.0\\system.data.datasetextensions.4.5.0.nupkg.sha512",
+    "C:\\Users\\Matthew\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.7.0\\system.security.cryptography.protecteddata.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

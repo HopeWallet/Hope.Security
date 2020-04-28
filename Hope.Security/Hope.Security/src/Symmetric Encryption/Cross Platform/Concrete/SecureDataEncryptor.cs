@@ -1,5 +1,4 @@
 ﻿using Hope.Random;
-using Hope.Security.SymmetricEncryption.DotNetDPAPI;
 using Hope.Security.SymmetricEncryption.DotNetSymmetric;
 
 namespace Hope.Security.SymmetricEncryption.CrossPlatform
@@ -7,7 +6,7 @@ namespace Hope.Security.SymmetricEncryption.CrossPlatform
     /// <summary>
     /// Cross platform class which encrypts/decrypts data for use across multiple sessions.
     /// </summary>
-    public sealed class SecureDataEncryptor : CrossPlatformEncryptor<WindowsDataEncryptor, AesEncryptor>
+    public sealed class SecureDataEncryptor : CrossPlatformEncryptor<AesEncryptor, AesEncryptor>
     {
         /// <summary>
         /// Whether this <see cref="CrossPlatformEncryptor"/> implements shorter term encryption methods.
